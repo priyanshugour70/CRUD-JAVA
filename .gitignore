@@ -1,4 +1,11 @@
-.classpath
-.setting
-.metadata
-.project
+.classpath/
+.settings/
+.metadata/
+.project/
+
+.idea/
+*.iml
+
+target/
+bin/
+build/
