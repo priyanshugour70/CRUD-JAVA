@@ -20,7 +20,7 @@ public class JdbcUtil {
 	static {
 		FileInputStream fis = null;
 
-		String fileInfo = "/Users/priyanshugour/Desktop/SDE/Building-MicroServices-in-Java-for-Cloud/CRUD-JDBC/src/com/pg/properties/database.properties";
+		String fileInfo = "/Users/priyanshugour/Desktop/SDE-Prep/BMCJ/CRUD-JDBC/src/com/pg/properties/database.properties";
 		try {
 			fis = new FileInputStream(fileInfo);
 			if (fis != null) {

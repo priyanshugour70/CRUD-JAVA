@@ -1,11 +1,15 @@
-.classpath/
+# STS Files to ignore
+*.STS
+*.STS.*
+*.STS.*.*
+
+
+# IDE Files to ignore
 .settings/
-.metadata/
-.project/
-
 .idea/
-*.iml
-
-target/
+.idea_modules/
+.idea/workspace.xml
+.classpath/
+.project/
+.buildpath/
 bin/
-build/
