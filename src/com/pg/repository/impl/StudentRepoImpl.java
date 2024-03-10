@@ -134,6 +134,31 @@ public class StudentRepoImpl implements StudentRepo{
     
     
     @Override
+    public int updateStudent(int studentId, Student updatedStudent) throws SQLException {
+        Statement statement = null;
+
+        try {
+            if (connection != null) {
+                statement = connection.createStatement();
+                String sqlUpdateQuery = String.format("UPDATE student SET sname='%s', sage=%d, saddress='%s', sclass='%s', sdob='%s' WHERE sid=%d",
+                        updatedStudent.getSname(), updatedStudent.getSage(), updatedStudent.getSaddress(),
+                        updatedStudent.getSclass(), updatedStudent.getSdob(), studentId);
+
+                return statement.executeUpdate(sqlUpdateQuery);
+            }
+        } finally {
+            // Ensure that resources are closed (e.g., statement)
+            if (statement != null) {
+                statement.close();
+            }
+        }
+
+        return 0;
+    }
+
+    
+    
+    @Override
     public int deleteRecord(int studentId) throws SQLException {
         Statement statement = null;
 

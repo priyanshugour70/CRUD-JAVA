@@ -31,6 +31,11 @@ public class StudentServiceImpl implements StudentService {
 	}
 	
     @Override
+    public int updateStudent(int studentId, Student updatedStudent) throws SQLException {
+        return repo.updateStudent(studentId, updatedStudent);
+    }
+	
+    @Override
     public int deleteRecord(int studentId) throws SQLException {
         return repo.deleteRecord(studentId);
     }

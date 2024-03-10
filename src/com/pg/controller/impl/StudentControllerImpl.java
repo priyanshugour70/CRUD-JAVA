@@ -28,6 +28,11 @@ public class StudentControllerImpl implements StudentController {
 	}
 	
     @Override
+    public int updateStudent(int studentId, Student updatedStudent) throws SQLException {
+        return service.updateStudent(studentId, updatedStudent);
+    }
+	
+    @Override
     public int deleteRecord(int studentId) throws SQLException {
         return service.deleteRecord(studentId);
     }

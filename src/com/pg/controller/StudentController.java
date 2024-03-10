@@ -18,6 +18,8 @@ public interface StudentController {
 
 	public int insertRecord(Student student) throws SQLException;
 	
+	int updateStudent(int studentId, Student updatedStudent) throws SQLException;
+	
 	int deleteRecord(int studentId) throws SQLException;
 
 }
