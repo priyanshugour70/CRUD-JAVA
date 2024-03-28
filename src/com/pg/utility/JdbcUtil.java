@@ -42,7 +42,7 @@ public class JdbcUtil {
 	
 	
 	
-	public static Connection getDBConection() throws IOException, SQLException {
+	public static Connection getDBConnection() throws IOException, SQLException {
 		// Database connection parameters
 		// JDBC dbUrl, dbUsername, and dbPassword of MySQL server
 		String dbProtocol = properties.getProperty("db.protocol", "jdbc:mysql://");

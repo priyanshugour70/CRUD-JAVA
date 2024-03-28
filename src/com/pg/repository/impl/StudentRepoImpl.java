@@ -19,7 +19,7 @@ public class StudentRepoImpl implements StudentRepo{
 	
 	static {
 		try {
-			connection = JdbcUtil.getDBConection();
+			connection = JdbcUtil.getDBConnection();
 		}catch(IOException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
